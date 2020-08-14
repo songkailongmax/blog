@@ -24,10 +24,9 @@ SECRET_KEY = '9)vv!9mzptt-dvro3p+f*_aa^^sov@k=s&6&!zy9wj4gwvs@@e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.songkailong.top', '123.57.72.81']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
-
 
 TEMPLATES = [
     {
@@ -64,7 +63,7 @@ INSTALLED_APPS = [
     'password_reset',
     'comment',
     'mptt',
-     # allauth 启动必须项
+    # allauth 启动必须项
     # 'django.contrib.auth',
     # 'django.contrib.messages',
 
@@ -94,7 +93,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'my_blog.urls'
-
 
 WSGI_APPLICATION = 'my_blog.wsgi.application'
 
@@ -167,4 +165,3 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-
